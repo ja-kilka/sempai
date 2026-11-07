@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Aqua Men - Главная</title>
+  
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     
+    <div class="phone-screen">
+
+        
+        <div class="app-header">
+            <img src="logo.png" alt="Aqua Men" class="logo-image">
+        </div>
+
+     
+        <div class="calc-card">
+            <div class="calc-left-text">
+                Узнайте вашу норму воды на день:
+            </div>
+            <div class="calc-right-fields">
+                <input type="number" id="weight-input" placeholder="Ваш вес" oninput="document.getElementById('norm-output').value = this.value ? (this.value * 35 / 1000).toFixed(2) + ' л' : ''">
+                <input type="text" id="norm-output" placeholder="Ваша норма..." readonly>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+       
+        <div class="food-container">
+            <h3 class="food-title">Сколько воды в разной еде?</h3>
+            
+            
+            <div class="food-row">
+                <div class="food-icon-box">
+                    <img src="images.png" alt="Яблоки">
+                </div>
+                <div class="food-name">Яблоки</div>
+                <div class="food-value">Около 86 г воды на 100г</div>
+                <div class="clearfix"></div>
+            </div>
+
+            
+            <div class="food-row">
+                <div class="food-icon-box">
+                    <img src="images (4).png" alt="Арбуз">
+                </div>
+                <div class="foood-name">Арбуз</div>
+                <div class="food-value">Около 92 г воды на 100г</div>
+                <div class="clearfix"></div>
+            </div>
+
+           
+            <div class="food-row">
+                <div class="food-icon-box">
+                    <img src="images (5).png" alt="Тыква">
+                </div>
+                <div class="food-name">Тыква</div>
+                <div class="food-value">Около 91 г воды на 100г</div>
+                <div class="clearfix"></div>
+            </div>
+
+           
+            <div class="food-row">
+                <div class="food-icon-box">
+                    <img src="Carrot_JE3_BE2.png" alt="Морковка">
+                </div>
+                <div class="food-name">Морковь</div>
+                <div class="food-value">Около 88 г воды на 100г</div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+       
+        <div class="navigation-buttons">
+            <a href="#" class="menu-pill-btn">Полезные советы</a>
+            <a href="#" class="menu-pill-btn">Премиум подписка</a>
+        </div>
+
+       
+        <div class="app-footer">
+            <span class="footer-text">Есть вопросы? Свяжитесь с нами!</span>
+            <div class="footer-socials">
+                <a href="#"><img src="image 1 (3).png" alt="Instagram"></a>
+                <a href="#"><img src="image 6.png" alt="X"></a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+
 </body>
 </html>
