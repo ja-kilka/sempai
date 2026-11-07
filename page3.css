@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgba(98, 100, 200, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    background-color: rgba(98, 100, 200, 1);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow: hidden;
+}
+
+.island {
+    background-color: rgba(159, 208, 208, 1);
+    border-radius: 28px;
+    padding: 18px 20px;
+}
+
+.header {
+    background-color: rgba(159, 208, 208, 1);
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.logo-img {
+    height: 45px;
+    object-fit: contain;
+}
+
+
+.glass-icon {
+    width: 32px;
+    height: 38px;
+}
+
+.banner-island {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+
+.banner-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #5562d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.icon-circle svg {
+    width: 26px;
+    height: 26px;
+    stroke: #a2f5fd;
+    fill: none;
+    stroke-width: 2;
+}
+
+.banner-text h2 {
+    color: #1a17ad;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.banner-text p {
+    color: #1a17ad;
+    font-size: 13px;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.btn-subscribe {
+    background-color: #9cdede;
+    color: #1a17ad;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    white-space: nowrap;
+}
+
+.plans-island h3 {
+    color: #1a17ad;
+    font-size: 24px;
+    margin-bottom: 14px;
+    font-weight: 700;
+}
+
+.plan-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.plan-item {
+    background-color: #6264c8;
+    border-radius: 20px;
+    padding: 10px 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.plan-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.plan-icon-circle {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #5562d5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.plan-icon-circle svg {
+    width: 20px;
+    height: 20px;
+    stroke: #a2f5fd;
+    fill: none;
+    stroke-width: 2;
+}
+
+.plan-text h4 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.plan-text p {
+    font-size: 11px;
+    opacity: 0.9;
+    margin-top: 2px;
+}
+
+.plan-price-btn {
+    background-color: #9fd0d0;
+    color: #1a17ad;
+    padding: 6px 14px;
+    border-radius: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.features-island {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.feature-text h4 {
+    color: #1a17ad;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.feature-text p {
+    color: #4b689f;
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.footer-island {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    border-radius: 16px 16px 0 0;
+}
+
+.footer-text {
+    color: #1a17ad;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.social-icons {
+    display: flex;
+    gap: 8px;
+}
+
+.social-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.social-btn.instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.social-btn.x-twitter {
+    background-color: #000;
+}
+
+.social-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: white;
+}
