@@ -1,209 +1,302 @@
-body, h3, p, input {
+:root {
+    --color-mint: rgba(159, 208, 208, 1);
+    --color-purple: rgba(98, 100, 200, 1);
+    --color-navy: rgba(30, 40, 66, 1);
+    --color-teal: rgba(17, 66, 66, 1);
+
+    --bg-main: var(--color-purple);
+    --bg-header-footer: var(--color-navy);
+    --bg-card-primary: var(--color-teal);
+    --bg-card-secondary: var(--color-navy);
+    --text-primary: #ffffff;
+    --text-header-footer: #ffffff;
+    --input-placeholder: rgba(255, 255, 255, 0.85);
+}
+
+body.light-theme {
+    --bg-main: var(--color-purple);
+    --bg-header-footer: var(--color-mint);
+    --bg-card-primary: var(--color-mint);
+    --bg-card-secondary: var(--color-purple);
+    --text-primary: #0b24a8; /* Насыщенный синий текст как на светлом макете */
+    --text-header-footer: #0b24a8;
+    --input-placeholder: #0b24a8;
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
-
 
 body {
-    background-color: #4B42B8; 
-    padding-top: 40px;
-    padding-bottom: 40px;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+.header {
+    background-color: var(--bg-header-footer);
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
 
-.phone-screen {
-    width: 400px;
-    min-height: 700px;
-    background-color: #98E6E6; 
+.header-container {
+    max-width: 600px;
     margin: 0 auto;
-    padding: 25px 24px;
-    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    border-radius: 16px; 
-    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.3);
 }
 
-
-.app-header {
-    text-align: center;
-    margin-bottom: 25px;
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
-.logo-image {
-    width: 220px; 
-    height: auto;
-    display: inline-block;
+.logo-text {
+    font-size: 26px;
+    font-weight: 900;
+    font-style: italic;
+    color: #000000; /* На обоих макетах логотип Aqua Men черного цвета */
+    letter-spacing: -0.5px;
 }
 
-
-.calc-card {
-    background-color: #5E54D2;
-    border-radius: 14px; 
-    padding: 18px 15px;
-    margin-bottom: 20px;
+.theme-btn {
+    position: absolute;
+    right: 0;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid currentColor;
+    color: var(--text-header-footer);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease, background 0.3s ease;
 }
 
-.calc-left-text {
-    float: left;
-    width: 48%;
-    color: #FFFFFF;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.4;
-    text-align: center;
-    padding-top: 14px;
+.theme-btn:hover {
+    transform: scale(1.08);
 }
 
-.calc-right-fields {
-    float: right;
-    width: 48%;
-}
-
-.calc-right-fields input {
+.main-content {
+    flex: 1;
     width: 100%;
-    padding: 9px;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 10px; 
+    max-width: 540px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.calculator-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.info-card {
+    background-color: var(--bg-card-primary);
+    color: var(--text-primary);
+    padding: 28px 30px;
+    border-radius: 60px;
+    flex: 1.1;
+    font-size: 18px;
+    line-height: 1.35;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.inputs-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.pill-box {
+    background-color: var(--bg-card-primary);
+    color: var(--text-primary);
+    border-radius: 30px;
+    padding: 14px 20px;
     text-align: center;
-    font-size: 12px;
+    font-size: 17px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pill-box input {
+    width: 100%;
+    background: transparent;
+    border: none;
     outline: none;
-    box-sizing: border-box;
+    text-align: center;
+    color: var(--text-primary);
+    font-size: 17px;
+    font-weight: 500;
 }
 
-
-.calc-right-fields input[type="number"] {
-    background-color: #FFFFFF; 
-    color: #111111;
-    font-weight: 600;
+.pill-box input::placeholder {
+    color: var(--input-placeholder);
 }
 
-.calc-right-fields input[readonly] {
-    background-color: #7B73E3; 
-    color: #FFFFFF;
-    margin-bottom: 0;
-    font-weight: 600;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
+.section-banner {
+    background-color: var(--bg-card-primary);
+    color: var(--text-primary);
+    border-radius: 35px;
+    padding: 18px 25px;
+    text-align: center;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section-banner h2 {
+    font-size: 20px;
+    font-weight: 500;
+}
 
 .food-container {
-    background-color: #FFFFFF;
-    border-radius: 14px; 
-    padding: 18px 15px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    background-color: var(--bg-card-primary);
+    border-radius: 35px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    transition: background-color 0.3s ease;
 }
 
-.food-title {
-    text-align: center;
-    font-size: 15px;
-    color: #111111;
-    font-weight: 700;
-    margin-bottom: 15px;
+.food-item {
+    background-color: var(--bg-card-secondary);
+    color: #ffffff; /* Текст внутри карточек еды белый в обеих темах */
+    border-radius: 35px;
+    padding: 12px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-
-.food-row {
-    background-color: #5E54D2; 
-    border-radius: 10px; 
-    padding: 8px 12px;
-    margin-bottom: 8px;
-    height: 46px;
-    box-sizing: border-box;
+.food-left {
+    display: flex;
+    align-items: center;
+    gap: 16px;
 }
 
-.food-row:last-child {
-    margin-bottom: 0;
-}
-
-.food-icon-box {
-    float: left;
-    width: 30px;
-    height: 30px;
-}
-
-.food-icon-box img {
-    width: 100%;
-    height: 100%;
+.food-icon {
+    width: 42px;
+    height: 42px;
     object-fit: contain;
+    image-rendering: pixelated; /* Сохраняет четкость пиксельных иконок */
 }
 
-.food-name {
-    float: left;
-    color: #FFFFFF;
-    font-size: 12px;
-    font-weight: 600;
-    margin-left: 12px;
-    line-height: 30px;
-    width: 70px;
+.food-name, .food-water {
+    font-size: 16px;
+    font-weight: 400;
 }
 
-.food-value {
-    float: right;
-    color: rgba(159, 208, 208, 1); 
-    font-size: 11px;
-    line-height: 30px;
-    text-align: right;
-    font-weight: 600;
+.action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 6px;
 }
 
-
-.navigation-buttons {
-    margin-bottom: 20px;
-}
-
-.menu-pill-btn {
-    display: block;
+.nav-pill {
+    background-color: var(--bg-header-footer);
+    color: var(--text-header-footer);
+    border: none;
+    border-radius: 35px;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
     width: 100%;
-    padding: 12px;
-    background-color: #5E54D2;
-    color: #FFFFFF;
-    text-decoration: none;
-    text-align: center;
-    font-size: 13px;
-    font-weight: 700;
-    border-radius: 10px; 
-    margin-bottom: 10px;
-    box-sizing: border-box;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.15s ease;
 }
 
-.menu-pill-btn:last-child {
-    margin-bottom: 0;
+.nav-pill:hover {
+    transform: translateY(-2px);
 }
 
-
-.app-footer {
-    text-align: center;
-    padding-top: 5px;
+.footer {
+    background-color: var(--bg-header-footer);
+    color: var(--text-header-footer);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .footer-text {
-    color: #111111;
-    font-size: 12px;
-    font-weight: 600;
-    display: inline-block;
-    vertical-align: middle;
+    font-size: 17px;
+    font-weight: 500;
 }
 
-.footer-socials {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 8px;
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 14px;
 }
 
-.footer-socials a {
-    text-decoration: none;
-    margin-left: 5px;
+.social-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    display: block;
+    transition: transform 0.2s ease;
 }
 
-.footer-socials img {
-    width: 18px;
-    height: 18px;
-    vertical-align: middle;
+.social-icon:hover {
+    transform: scale(1.1);
 }
 
+@media (max-width: 480px) {
+    .calculator-section {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
-.clearfix {
-    clear: both;
+    .info-card {
+        text-align: center;
+        border-radius: 35px;
+        padding: 20px;
+    }
+
+    .food-item {
+        padding: 12px 16px;
+        gap: 10px;
+    }
+
+    .food-name, .food-water {
+        font-size: 14px;
+    }
+}
+.input-label {
+    cursor: text;
+    display: block;
+}
+
+.input-label:focus-within {
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5);
 }

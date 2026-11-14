@@ -1,134 +1,192 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqua Men — Премиум</title>
-    <link rel="stylesheet" href="page3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqua Men — Премиум подписка</title>
+    <script src="page3.js"></script>
+  <link rel="stylesheet" href="page3.css">
 </head>
 <body>
 
+  <header class="header">
+    <div class="header__container">
+      <div class="header__spacer"></div>
+
+      <a href="#" class="logo" aria-label="Aqua Men">
+        <span class="logo__text">Aqua</span>
+        <svg class="logo__glass" width="44" height="58" viewBox="0 0 64 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 10L15 76C15.5 80 22 82 32 82C42 82 48.5 80 49 76L56 10" fill="#FFFFFF" stroke="#111927" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M11.2 29L16 73C16.5 76 22.5 77.5 32 77.5C41.5 77.5 47.5 76 48 73L52.8 29H11.2Z" fill="#29A5E6"/>
+          <path d="M15 29L19 73.5L24 74.5L20.5 29H15Z" fill="#63C8F7" fill-opacity="0.7"/>
+          <path d="M44 13L41 74.5L46 73.5L51 12L44 13Z" fill="#BAE6FD" fill-opacity="0.6"/>
+          <ellipse cx="32" cy="29" rx="20.8" ry="4.5" fill="#70D6FF"/>
+          <ellipse cx="32" cy="10" rx="24" ry="5.5" fill="#FFFFFF" stroke="#111927" stroke-width="3.5"/>
+        </svg>
+        <span class="logo__text">Men</span>
+      </a>
+
+      <button id="theme-toggle" class="theme-btn" type="button" aria-label="Переключить тему" title="Сменить тему">
+
+        <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+
+        <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+  <main class="main">
     <div class="container">
-        
 
-    <header class="header">
-        <div class="logo-container">
-            <img src="Group 1.png" alt="Aqua Men Logo" class="logo-img">
-        </div>
-    </header>
-
-
-        <div class="island banner-island">
-            <div class="banner-left">
-                <div class="icon-circle">
-                    <!-- SVG Корона -->
-                    <svg viewBox="0 0 24 24"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7z"/></svg>
-                </div>
-                <div class="banner-text">
-                    <h2>Премиум</h2>
-                    <p>Больше воды – больше<br>заботы о себе!</p>
-                </div>
-            </div>
-            <button class="btn-subscribe">Подписаться</button>
+      <section class="card hero-card">
+        <div class="icon-circle icon-circle--lg">
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 18h18L19 7l-4.5 4.5L12 5l-2.5 6.5L5 7l-2 11z"/>
+            <circle cx="5" cy="7" r="1" fill="currentColor"/>
+            <circle cx="12" cy="5" r="1" fill="currentColor"/>
+            <circle cx="19" cy="7" r="1" fill="currentColor"/>
+          </svg>
         </div>
 
-        <div class="island plans-island">
-            <h3>Выберите тариф</h3>
-            <div class="plan-list">
-
-                <div class="plan-item">
-                    <div class="plan-info">
-                        <div class="plan-icon-circle">
-
-                            <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-                        </div>
-                        <div class="plan-text">
-                            <h4>Базовый</h4>
-                            <p>Больше воды каждый день</p>
-                        </div>
-                    </div>
-                    <div class="plan-price-btn">99 ₴ / мeс</div>
-                </div>
-
-
-                <div class="plan-item">
-                    <div class="plan-info">
-                        <div class="plan-icon-circle">
-
-                            <svg viewBox="0 0 24 24"><path d="M8 4l3.5 3.5a5 5 0 1 1-7 0z M16 4l3.5 3.5a5 5 0 1 1-7 0z"/></svg>
-                        </div>
-                        <div class="plan-text">
-                            <h4>Оптимальный</h4>
-                            <p>Больше пользы для здоровья</p>
-                        </div>
-                    </div>
-                    <div class="plan-price-btn">199 ₴ / мeс</div>
-                </div>
-
-
-                <div class="plan-item">
-                    <div class="plan-info">
-                        <div class="plan-icon-circle">
-                            <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                        </div>
-                        <div class="plan-text">
-                            <h4>Премиум</h4>
-                            <p>Максимальная забота о себе</p>
-                        </div>
-                    </div>
-                    <div class="plan-price-btn">349 ₴ / мeс</div>
-                </div>
-
-            </div>
+        <div class="hero-card__content">
+          <h1 class="hero-card__title">Премиум</h1>
+          <p class="hero-card__subtitle">Больше воды - больше заботы о себе!</p>
         </div>
 
-        <div class="island features-island">
-            
-            <div class="feature-item">
-                <div class="plan-icon-circle">
-                    <svg viewBox="0 0 24 24"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-                </div>
-                <div class="feature-text">
-                    <h4>Персональные рекомендации</h4>
-                    <p>Подбор нормы воды под ваш образ жизни</p>
-                </div>
-            </div>
+        <button type="button" class="pill-btn hero-card__btn" id="subscribe-main-btn">
+          Подписаться
+        </button>
+      </section>
 
-            <div class="feature-item">
-                <div class="plan-icon-circle">
-                    <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
-                </div>
-                <div class="feature-text">
-                    <h4>Статистика и прогресс</h4>
-                    <p>Следите за своими результатами</p>
-                </div>
-            </div>
+      <section class="card plans-card">
+        <h2 class="section-title">Выберите тариф</h2>
 
-            <div class="feature-item">
-                <div class="plan-icon-circle">
-                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
-                </div>
-                <div class="feature-text">
-                    <h4>Эксклюзивные материалы</h4>
-                    <p>Доступ к полезным советам и гайдам</p>
-                </div>
+        <div class="plans-list">
+          <div class="plan-item" data-plan="Базовый" data-price="99 ₴ / мес">
+            <div class="icon-circle">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                <path d="M12 17a4 4 0 0 0 4-4"/>
+              </svg>
             </div>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Базовый</h3>
+              <p class="plan-item__desc">Больше воды каждый день</p>
+            </div>
+            <button type="button" class="pill-btn plan-item__price">99 ₴ / мес</button>
+          </div>
 
+          <div class="plan-item" data-plan="Оптимальный" data-price="199 ₴ / мес">
+            <div class="icon-circle">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M8.5 6.5l3.5 3.5a5 5 0 1 1-7 0l3.5-3.5z"/>
+                <path d="M16.5 3.5l3.2 3.2a4.5 4.5 0 1 1-6.4 0l3.2-3.2z"/>
+              </svg>
+            </div>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Оптимальный</h3>
+              <p class="plan-item__desc">Больше пользы для здоровья</p>
+            </div>
+            <button type="button" class="pill-btn plan-item__price">199 ₴ / мес</button>
+          </div>
+
+          <div class="plan-item is-selected" data-plan="Премиум" data-price="349 ₴ / мес">
+            <div class="icon-circle">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Премиум</h3>
+              <p class="plan-item__desc">Максимальная забота о себе</p>
+            </div>
+            <button type="button" class="pill-btn plan-item__price">349 ₴ / мес</button>
+          </div>
         </div>
+      </section>
 
- <div class="island footer-island">
-            <span class="footer-text">Есть вопросы? свяжитесь с нами!</span>
-            <div class="social-icons">
-                <a href="#" class="social-btn instagram" aria-label="Instagram">
-                    <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                </a>
-                <a href="#" class="social-btn x-twitter" aria-label="X">
-                    <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                </a>
+      <section class="card features-card">
+        <ul class="features-list">
+          <li class="feature-item">
+            <div class="icon-circle icon-circle--sm">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/>
+                <path d="M12 17a4 4 0 0 0 4-4"/>
+              </svg>
             </div>
-        </div>
+            <div class="feature-item__text">
+              <h3 class="feature-item__title">Персональные рекомендации</h3>
+              <p class="feature-item__desc">Подбор нормы воды под ваш образ жизни</p>
+            </div>
+          </li>
+
+          <li class="feature-item">
+            <div class="icon-circle icon-circle--sm">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="4" y="13" width="3.5" height="7" rx="0.5"/>
+                <rect x="10.25" y="9" width="3.5" height="11" rx="0.5"/>
+                <rect x="16.5" y="5" width="3.5" height="15" rx="0.5"/>
+              </svg>
+            </div>
+            <div class="feature-item__text">
+              <h3 class="feature-item__title">Статистика и прогресс</h3>
+              <p class="feature-item__desc">Следите за своими результатами</p>
+            </div>
+          </li>
+
+          <li class="feature-item">
+            <div class="icon-circle icon-circle--sm">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+            </div>
+            <div class="feature-item__text">
+              <h3 class="feature-item__title">Эксклюзивные материалы</h3>
+              <p class="feature-item__desc">Доступ к полезным советам и гайдам</p>
+            </div>
+          </li>
+        </ul>
+      </section>
 
     </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">Есть вопросы? свяжитесь с нами!</p>
+      <div class="footer__socials">
+        <a href="#" class="social-link social-link--ig" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#" class="social-link social-link--x" aria-label="X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8">
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
 
 </body>
 </html>

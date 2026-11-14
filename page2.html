@@ -1,101 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqua Men — Полезные советы</title>
-    <link rel="stylesheet" href="page2.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aqua Men — Полезные советы</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="page2.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo-container">
-            <img src="Group 1.png" alt="Aqua Men Logo" class="logo-img">
+
+  <header class="header">
+    <div class="header__container">
+      <div class="header__spacer"></div>
+
+
+      <a href="index.html" class="logo" aria-label="Aqua Men">
+        <span class="logo__text">Aqua</span>
+        <svg class="logo__glass" width="44" height="58" viewBox="0 0 64 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8 10L15 76C15.5 80 22 82 32 82C42 82 48.5 80 49 76L56 10" fill="#FFFFFF" stroke="#111927" stroke-width="3.5" stroke-linejoin="round"/>
+          <path d="M11.2 29L16 73C16.5 76 22.5 77.5 32 77.5C41.5 77.5 47.5 76 48 73L52.8 29H11.2Z" fill="#29A5E6"/>
+          <path d="M15 29L19 73.5L24 74.5L20.5 29H15Z" fill="#63C8F7" fill-opacity="0.7"/>
+          <path d="M44 13L41 74.5L46 73.5L51 12L44 13Z" fill="#BAE6FD" fill-opacity="0.6"/>
+          <ellipse cx="32" cy="29" rx="20.8" ry="4.5" fill="#70D6FF"/>
+          <ellipse cx="32" cy="10" rx="24" ry="5.5" fill="#FFFFFF" stroke="#111927" stroke-width="3.5"/>
+        </svg>
+        <span class="logo__text">Men</span>
+      </a>
+
+      <button id="theme-toggle" class="theme-btn" type="button" aria-label="Переключить тему" title="Сменить тему">
+
+        <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+
+        <svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+
+  <main class="main">
+    <div class="container">
+
+
+      <section class="card hero-card">
+        <div class="icon-circle icon-circle--lg">
+
+          <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18h6"/>
+            <path d="M10 22h4"/>
+            <path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7z"/>
+          </svg>
         </div>
-    </header>
 
-    <div class="island-container">
+        <div class="hero-card__content">
+          <h1 class="hero-card__title">Полезные советы</h1>
+          <p class="hero-card__subtitle">Маленькие привычки - большая польза!</p>
+        </div>
 
-        <section class="top-section">
-            <div class="panel hero-panel">
-                <div class="icon-wrap">
-                    <img src="image 14.jpg" alt="Лампочка">
-                </div>
-                <div class="hero-text">
-                    <h1>Полезные советы</h1>
-                    <p>Маленькие привычки - большая польза!</p>
-                </div>
+
+        <div class="hero-nav-buttons">
+          <a href="index.html" class="pill-btn nav-btn">Главная</a>
+          <a href="tips.html" class="pill-btn nav-btn nav-btn--active">Полезные советы</a>
+        </div>
+      </section>
+      <section class="card plans-card">
+        <div class="plans-list">
+
+          <div class="plan-item">
+            <div class="icon-circle">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 3h14l-2 16a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L5 3z"/>
+                <path d="M6 10h12"/>
+              </svg>
             </div>
-
-            <div class="nav-buttons">
-                <a href="#" class="panel nav-btn">Главная</a>
-                <a href="#" class="panel nav-btn">Полезные советы</a>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Пейте воду регулярно</h3>
+              <p class="plan-item__desc">Не ждите сильной жажды. Лучше пить воду небольшими порциями в течение всего дня.</p>
             </div>
-        </section>
+          </div>
 
-        <section class="cards-list">
-            
-            <article class="panel card">
-                <div class="card-icon">
-                    <img src="image 21.jpg" alt="Стакан воды">
-                </div>
-                <div class="card-text">
-                    <h2>Пейте воду регулярно</h2>
-                    <p>Не ждите сильной жажды. Лучше пить воду небольшими порциями в течение всего дня.</p>
-                </div>
-            </article>
-
-            <article class="panel card">
-                <div class="card-icon">
-                    <img src="image 20.jpg" alt="Гантель">
-                </div>
-                <div class="card-text">
-                    <h2>Больше двигайтесь</h2>
-                    <p>Физическая активность увеличивает потребность в воде. Пейте воду до, во время и после тренировки.</p>
-                </div>
-            </article>
-
-            <article class="panel card">
-                <div class="card-icon">
-                    <img src="image 22.jpg" alt="Солнце">
-                </div>
-                <div class="card-text">
-                    <h2>Учитывайте погоду</h2>
-                    <p>В жару и при повышенной температуре организма нужно больше воды, чем обычно</p>
-                </div>
-            </article>
-
-            <article class="panel card">
-                <div class="card-icon">
-                    <img src="image 23.jpg" alt="Яблоко">
-                </div>
-                <div class="card-text">
-                    <h2>Выбирайте продукты с высоким содержанием воды</h2>
-                    <p>Овощи, фрукты, ягоды и супы помогают поддерживать водный баланс.</p>
-                </div>
-            </article>
-
-            <article class="panel card">
-                <div class="card-icon">
-                    <img src="image 19.jpg" alt="Сердце">
-                </div>
-                <div class="card-text">
-                    <h2>Слушайте свой организм</h2>
-                    <p>Сухость во рту, усталость и головная боль - это сигналы, что вам нужна вода.</p>
-                </div>
-            </article>
-
-        </section>
-
-        <footer class="panel footer">
-            <p class="footer-text">Есть вопросы? свяжитесь с нами!</p>
-            <div class="social-icons">
-                <a href="#"><img src="image 1 (2).jpg" alt="Instagram"></a>
-                <a href="#"><img src="image 2 (2).jpg" alt="X (Twitter)"></a>
+          <div class="plan-item">
+            <div class="icon-circle">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6.5 6.5v11M3 9.5v5M17.5 6.5v11M21 9.5v5M6.5 12h11"/>
+              </svg>
             </div>
-        </footer>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Больше двигайтесь</h3>
+              <p class="plan-item__desc">Физическая активность увеличивает потребность в воде. Пейте воду до, во время и после тренировки.</p>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <div class="icon-circle">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"/>
+                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+              </svg>
+            </div>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Учитывайте погоду</h3>
+              <p class="plan-item__desc">В жару и при повышенной температуре организма нужно больше воды, чем обычно</p>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <div class="icon-circle">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20.94c1.5 0 2.75-.75 3.5-1.5 1.25-1.25 2.5-3.75 2.5-6.44 0-3-2-5-4-5-1.25 0-2.25.75-3 1.5-.75-.75-1.75-1.5-3-1.5-2 0-4 2-4 5 0 2.69 1.25 5.19 2.5 6.44.75.75 2 1.5 3.5 1.5z"/>
+                <path d="M12 5.5V3"/>
+              </svg>
+            </div>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Выбирайте продукты с высоким содержанием воды</h3>
+              <p class="plan-item__desc">Овощи, фрукты, ягоды и супы помогают поддерживать водный баланс.</p>
+            </div>
+          </div>
+
+          <div class="plan-item">
+            <div class="icon-circle">
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+            </div>
+            <div class="plan-item__info">
+              <h3 class="plan-item__name">Слушайте свой организм</h3>
+              <p class="plan-item__desc">Сухость во рту, усталость и головная боль - это сигналы, что вам нужна вода.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
 
     </div>
+  </main>
 
+  <footer class="footer">
+    <div class="footer__container">
+      <p class="footer__text">Есть вопросы? свяжитесь с нами!</p>
+      <div class="footer__socials">
+        <a href="#" class="social-link social-link--ig" aria-label="Instagram">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="#" class="social-link social-link--x" aria-label="X">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8">
+            <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="page2.js"></script>
 </body>
 </html>
