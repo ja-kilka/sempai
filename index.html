@@ -10,22 +10,18 @@
 
     <header class="header">
         <div class="header-container">
-            <div class="logo">
+            <a href="index.html" class="logo" aria-label="AquaMen — Главная">
                 <span class="logo-text">Aqua</span>
                 <svg class="logo-icon" viewBox="0 0 60 80" width="38" height="50">
-
                     <polygon points="8,8 52,8 46,72 14,72" fill="#ffffff" stroke="#1e2842" stroke-width="3" stroke-linejoin="round"/>
-
                     <polygon points="10,26 50,26 45,68 15,68" fill="#2ea8e6"/>
-
                     <ellipse cx="30" cy="26" rx="20" ry="4" fill="#63d2ff"/>
-
                     <ellipse cx="30" cy="8" rx="22" ry="4.5" fill="#ffffff" stroke="#1e2842" stroke-width="3"/>
                 </svg>
                 <span class="logo-text">Men</span>
-            </div>
+            </a>
 
-            <button id="theme-toggle" class="theme-btn" aria-label="Переключить тему" title="Сменить тему">
+            <button id="theme-toggle" class="theme-btn" type="button" aria-label="Переключить тему" title="Сменить тему">
                 ☀️
             </button>
         </div>
@@ -39,13 +35,13 @@
             </div>
             
             <div class="inputs-group">
-    <label class="pill-box input-label" for="weight-input">
-        <input type="number" id="weight-input" placeholder="Ваш вес (кг)" min="1" max="350" step="0.1">
-    </label>
-    <div class="pill-box">
-        <span id="norm-output">Ваша норма...</span>
-    </div>
-</div>
+                <label class="pill-box input-label" for="weight-input">
+                    <input type="number" id="weight-input" placeholder="Ваш вес (кг)" min="1" max="350" step="0.1">
+                </label>
+                <div class="pill-box">
+                    <span id="norm-output">Ваша норма...</span>
+                </div>
+            </div>
         </section>
 
         <div class="section-banner">
@@ -87,12 +83,8 @@
         </section>
 
         <section class="action-buttons">
-            <button class="nav-pill" onclick="alert('Совет: выпивайте стакан воды сразу после пробуждения!')">
-                Полезные советы
-            </button>
-            <button class="nav-pill" onclick="alert('Премиум подписка скоро будет доступна!')">
-                Премиум подписка
-            </button>
+            <a href="tips.html" class="nav-pill">Полезные советы</a>
+            <a href="premium.html" class="nav-pill">Премиум подписка</a>
         </section>
 
     </main>

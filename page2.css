@@ -1,6 +1,3 @@
-/* =========================================
-   Базовая палитра (Темная тема по умолчанию)
-   ========================================= */
 :root {
   --clr-mint: rgba(159, 208, 208, 1);
   --clr-indigo: rgba(98, 100, 200, 1);
@@ -10,7 +7,6 @@
   --clr-black: #000000;
   --clr-blue-text: #0d32c5;
 
-  /* Значения по умолчанию — ТЕМНАЯ ТЕМА */
   --bg-page: var(--clr-indigo);
   --bg-chrome: var(--clr-navy);
   --bg-card: var(--clr-navy);
@@ -25,9 +21,6 @@
   --icon-stroke: var(--clr-mint);
 }
 
-/* =========================================
-   СВЕТЛАЯ ТЕМА
-   ========================================= */
 body.light-theme {
   --bg-page: var(--clr-indigo);
   --bg-chrome: var(--clr-mint);
@@ -42,7 +35,6 @@ body.light-theme {
   --text-footer: var(--clr-blue-text);
   --icon-stroke: var(--clr-white);
 }
-
 
 *,
 *::before,
@@ -61,7 +53,6 @@ body {
   flex-direction: column;
   transition: background-color 0.35s ease, color 0.35s ease;
 }
-
 
 .header {
   background-color: var(--bg-chrome);

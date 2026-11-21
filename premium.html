@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aqua Men — Премиум подписка</title>
-    <script src="page3.js"></script>
+  <script src="page3.js" defer></script>
   <link rel="stylesheet" href="page3.css">
 </head>
 <body>
@@ -13,7 +13,7 @@
     <div class="header__container">
       <div class="header__spacer"></div>
 
-      <a href="#" class="logo" aria-label="Aqua Men">
+      <a href="index.html" class="logo" aria-label="Aqua Men">
         <span class="logo__text">Aqua</span>
         <svg class="logo__glass" width="44" height="58" viewBox="0 0 64 84" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 10L15 76C15.5 80 22 82 32 82C42 82 48.5 80 49 76L56 10" fill="#FFFFFF" stroke="#111927" stroke-width="3.5" stroke-linejoin="round"/>
@@ -27,7 +27,6 @@
       </a>
 
       <button id="theme-toggle" class="theme-btn" type="button" aria-label="Переключить тему" title="Сменить тему">
-
         <svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="5"></circle>
           <line x1="12" y1="1" x2="12" y2="3"></line>
@@ -47,7 +46,6 @@
     </div>
   </header>
 
-
   <main class="main">
     <div class="container">
 
@@ -66,9 +64,15 @@
           <p class="hero-card__subtitle">Больше воды - больше заботы о себе!</p>
         </div>
 
-        <button type="button" class="pill-btn hero-card__btn" id="subscribe-main-btn">
-          Подписаться
-        </button>
+        <div class="hero-card__actions">
+          <button type="button" class="pill-btn hero-card__btn" id="subscribe-main-btn">
+            Подписаться
+          </button>
+          <div class="page-switch">
+            <a href="index.html" class="mini-nav-link">Главная</a>
+            <a href="tips.html" class="mini-nav-link">Советы</a>
+          </div>
+        </div>
       </section>
 
       <section class="card plans-card">
@@ -186,7 +190,6 @@
   </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
-
 
 </body>
 </html>

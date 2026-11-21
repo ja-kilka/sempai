@@ -12,21 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
         themeToggleBtn.textContent = '☀️';
     }
 
-weightInput.addEventListener('input', () => {
-    const rawValue = weightInput.value.replace(',', '.');
-    const weight = parseFloat(rawValue);
-
-    if (!isNaN(weight) && weight > 0 && weight <= 350) {
-        const ml = Math.round(weight * 30);
-        const liters = (ml / 1000).toFixed(2);
-        normOutput.textContent = `${liters} л (${ml} мл)`;
-    } else if (weight > 350) {
-        normOutput.textContent = 'Введите реальный вес';
-    } else {
-        normOutput.textContent = 'Ваша норма...';
-    }
-});
-
     themeToggleBtn.addEventListener('click', () => {
         body.classList.toggle('light-theme');
         
@@ -40,11 +25,15 @@ weightInput.addEventListener('input', () => {
     });
 
     weightInput.addEventListener('input', () => {
-        const weight = parseFloat(weightInput.value);
+        const rawValue = weightInput.value.replace(',', '.');
+        const weight = parseFloat(rawValue);
 
-        if (!isNaN(weight) && weight > 0) {
-            const liters = (weight * 0.03).toFixed(2);
-            normOutput.textContent = `${liters} л в день`;
+        if (!isNaN(weight) && weight > 0 && weight <= 350) {
+            const ml = Math.round(weight * 30);
+            const liters = (ml / 1000).toFixed(2);
+            normOutput.textContent = `${liters} л (${ml} мл)`;
+        } else if (weight > 350) {
+            normOutput.textContent = 'Введите реальный вес';
         } else {
             normOutput.textContent = 'Ваша норма...';
         }
